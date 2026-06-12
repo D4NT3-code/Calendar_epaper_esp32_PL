@@ -15,8 +15,8 @@
 #include "date_digits.h"
 
 /* ================== KONFIGURACJA ================== */
-const char* const WIFI_SSID = "TP-Link_IoT_FF88";
-const char* const WIFI_PASSWORD = "45352164";
+const char* const WIFI_SSID = "wifi";
+const char* const WIFI_PASSWORD = "pass";
 
 // 1 = po odswiezeniu ekran i ESP ida spac do nastepnej polnocy.
 // Jesli powerbank sie wylacza przy malym poborze pradu, ustaw 0.
