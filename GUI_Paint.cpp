@@ -566,7 +566,64 @@ parameter:
     Color_Foreground : Select the foreground color
     Color_Background : Select the background color
 ******************************************************************************/
-void Paint_DrawChar(UWORD Xpoint, UWORD Ypoint, const char Acsii_Char,
+#define FONT_ASCII_FIRST ' '
+#define FONT_ASCII_LAST  '~'
+#define FONT_ASCII_COUNT (FONT_ASCII_LAST - FONT_ASCII_FIRST + 1)
+#define FONT_MISSING_GLYPH ('?' - FONT_ASCII_FIRST)
+
+static uint16_t Paint_DecodeGlyphIndex(const char **pString)
+{
+    const uint8_t *p = (const uint8_t *)*pString;
+
+    if (*p >= FONT_ASCII_FIRST && *p <= FONT_ASCII_LAST) {
+        *pString += 1;
+        return *p - FONT_ASCII_FIRST;
+    }
+
+    if (p[0] >= 0xC0 && p[0] <= 0xDF && p[1]) {
+        uint16_t key = ((uint16_t)p[0] << 8) | p[1];
+        *pString += 2;
+
+        switch (key) {
+            case 0xC484: return FONT_ASCII_COUNT + 0;  // A ogonek
+            case 0xC486: return FONT_ASCII_COUNT + 1;  // C acute
+            case 0xC498: return FONT_ASCII_COUNT + 2;  // E ogonek
+            case 0xC581: return FONT_ASCII_COUNT + 3;  // L stroke
+            case 0xC583: return FONT_ASCII_COUNT + 4;  // N acute
+            case 0xC393: return FONT_ASCII_COUNT + 5;  // O acute
+            case 0xC59A: return FONT_ASCII_COUNT + 6;  // S acute
+            case 0xC5B9: return FONT_ASCII_COUNT + 7;  // Z acute
+            case 0xC5BB: return FONT_ASCII_COUNT + 8;  // Z dot
+            case 0xC485: return FONT_ASCII_COUNT + 9;  // a ogonek
+            case 0xC487: return FONT_ASCII_COUNT + 10; // c acute
+            case 0xC499: return FONT_ASCII_COUNT + 11; // e ogonek
+            case 0xC582: return FONT_ASCII_COUNT + 12; // l stroke
+            case 0xC584: return FONT_ASCII_COUNT + 13; // n acute
+            case 0xC3B3: return FONT_ASCII_COUNT + 14; // o acute
+            case 0xC59B: return FONT_ASCII_COUNT + 15; // s acute
+            case 0xC5BA: return FONT_ASCII_COUNT + 16; // z acute
+            case 0xC5BC: return FONT_ASCII_COUNT + 17; // z dot
+            default: return FONT_MISSING_GLYPH;
+        }
+    }
+
+    if (p[0] >= 0xE0 && p[0] <= 0xEF && p[1] && p[2]) {
+        *pString += 3;
+        return FONT_MISSING_GLYPH;
+    }
+
+    if (p[0] >= 0xF0 && p[0] <= 0xF7 && p[1] && p[2] && p[3]) {
+        *pString += 4;
+        return FONT_MISSING_GLYPH;
+    }
+
+    if (*p) {
+        *pString += 1;
+    }
+    return FONT_MISSING_GLYPH;
+}
+
+static void Paint_DrawGlyph(UWORD Xpoint, UWORD Ypoint, uint16_t Glyph_Index,
                     sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
 {
     UWORD Page, Column;
@@ -576,7 +633,7 @@ void Paint_DrawChar(UWORD Xpoint, UWORD Ypoint, const char Acsii_Char,
         return;
     }
 
-    uint32_t Char_Offset = (Acsii_Char - ' ') * Font->Height * (Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
+    uint32_t Char_Offset = Glyph_Index * Font->Height * (Font->Width / 8 + (Font->Width % 8 ? 1 : 0));
     const unsigned char *ptr = &Font->table[Char_Offset];
 
     for (Page = 0; Page < Font->Height; Page ++ ) {
@@ -603,6 +660,31 @@ void Paint_DrawChar(UWORD Xpoint, UWORD Ypoint, const char Acsii_Char,
         if (Font->Width % 8 != 0)
             ptr++;
     }// Write all
+}
+
+void Paint_DrawChar(UWORD Xpoint, UWORD Ypoint, const char Acsii_Char,
+                    sFONT* Font, UWORD Color_Foreground, UWORD Color_Background)
+{
+    uint8_t Char = (uint8_t)Acsii_Char;
+    uint16_t Glyph_Index = FONT_MISSING_GLYPH;
+
+    if (Char >= FONT_ASCII_FIRST && Char <= FONT_ASCII_LAST) {
+        Glyph_Index = Char - FONT_ASCII_FIRST;
+    }
+
+    Paint_DrawGlyph(Xpoint, Ypoint, Glyph_Index, Font, Color_Foreground, Color_Background);
+}
+
+UWORD Paint_TextWidth(const char * pString, sFONT* Font)
+{
+    UWORD Count = 0;
+
+    while (*pString != '\0') {
+        Paint_DecodeGlyphIndex(&pString);
+        Count++;
+    }
+
+    return Count * Font->Width;
 }
 
 /******************************************************************************
@@ -638,10 +720,8 @@ void Paint_DrawString_EN(UWORD Xstart, UWORD Ystart, const char * pString,
             Xpoint = Xstart;
             Ypoint = Ystart;
         }
-        Paint_DrawChar(Xpoint, Ypoint, * pString, Font, Color_Background, Color_Foreground);
-
-        //The next character of the address
-        pString ++;
+        uint16_t Glyph_Index = Paint_DecodeGlyphIndex(&pString);
+        Paint_DrawGlyph(Xpoint, Ypoint, Glyph_Index, Font, Color_Background, Color_Foreground);
 
         //The next word of the abscissa increases the font of the broadband
         Xpoint += Font->Width;

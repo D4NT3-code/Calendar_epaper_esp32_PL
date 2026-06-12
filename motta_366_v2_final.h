@@ -1,743 +1,743 @@
 #pragma once
 
 // 366 mott przygotowanych pod ekran: dwie linie + podpis.
-// Wersja v2 final: bez polskich znakow, bez duplikatow,
-// line1 + spacja + line2 <= 66 znakow.
+// Wersja v2 final: z polskimi znakami, bez duplikatów,
+// line1 + spacja + line2 <= 66 znaków.
 struct MottoItem { const char* line1; const char* line2; const char* author; };
 
-const MottoItem MOTTA_366[] = {
+const MottoItem DAILY_MOTTOS[] = {
   // 001
-  {"Lepszy wrobel w garsci", "niz golab na dachu.", "przyslowie"},
+  {"Lepszy wróbel w garści", "niż gołąb na dachu.", "przysłowie"},
   // 002
-  {"Nie od razu Krakow", "zbudowano.", "przyslowie"},
+  {"Nie od razu Kraków", "zbudowano.", "przysłowie"},
   // 003
-  {"Bez pracy", "nie ma kolaczy.", "przyslowie"},
+  {"Bez pracy", "nie ma kołaczy.", "przysłowie"},
   // 004
-  {"Co nagle,", "to po diable.", "przyslowie"},
+  {"Co nagle,", "to po diable.", "przysłowie"},
   // 005
-  {"Gdzie zgoda,", "tam sila.", "przyslowie"},
+  {"Gdzie zgoda,", "tam siła.", "przysłowie"},
   // 006
-  {"Kropla drazy skale", "wytrwaloscia.", "przyslowie"},
+  {"Kropla drąży skałę", "wytrwałością.", "przysłowie"},
   // 007
-  {"Cierpliwosc bywa gorzka,", "ale owoc ma slodki.", "przyslowie"},
+  {"Cierpliwość bywa gorzka,", "ale owoc ma słodki.", "przysłowie"},
   // 008
-  {"Kto rano wstaje,", "temu Pan Bog daje.", "przyslowie"},
+  {"Kto rano wstaje,", "temu Pan Bóg daje.", "przysłowie"},
   // 009
-  {"Nie czyn drugiemu,", "co tobie niemile.", "przyslowie"},
+  {"Nie czyn drugiemu,", "co tobie niemiłe.", "przysłowie"},
   // 010
-  {"Zgoda buduje,", "niezgoda rujnuje.", "przyslowie"},
+  {"Zgoda buduje,", "niezgoda rujnuje.", "przysłowie"},
   // 011
-  {"Apetyt rosnie", "w miare jedzenia.", "przyslowie"},
+  {"Apetyt rośnie", "w miarę jedzenia.", "przysłowie"},
   // 012
-  {"Fortuna kolem", "sie toczy.", "przyslowie"},
+  {"Fortuna kołem", "się toczy.", "przysłowie"},
   // 013
-  {"Kazdy jest kowalem", "swego losu.", "przyslowie"},
+  {"Każdy jest kowalem", "swego losu.", "przysłowie"},
   // 014
-  {"Mowa jest srebrem,", "milczenie zlotem.", "przyslowie"},
+  {"Mowa jest srebrem,", "milczenie złotem.", "przysłowie"},
   // 015
-  {"Potrzeba jest matka", "wynalazkow.", "przyslowie"},
+  {"Potrzeba jest matka", "wynalazków.", "przysłowie"},
   // 016
-  {"Prawda sama", "sie obroni.", "przyslowie"},
+  {"Prawda sama", "się obroni.", "przysłowie"},
   // 017
-  {"Z pustego", "i Salomon nie naleje.", "przyslowie"},
+  {"Z pustego", "i Salomon nie naleje.", "przysłowie"},
   // 018
-  {"Nie ma dymu", "bez ognia.", "przyslowie"},
+  {"Nie ma dymu", "bez ognia.", "przysłowie"},
   // 019
-  {"Darowanemu koniowi", "nie zaglada sie w zeby.", "przyslowie"},
+  {"Darowanemu koniowi", "nie zagląda się w zęby.", "przysłowie"},
   // 020
-  {"Kto sieje wiatr,", "ten zbiera burze.", "przyslowie"},
+  {"Kto sieje wiatr,", "ten zbiera burze.", "przysłowie"},
   // 021
-  {"Nie chwal dnia", "przed zachodem slonca.", "przyslowie"},
+  {"Nie chwal dnia", "przed zachodem slonca.", "przysłowie"},
   // 022
-  {"Co dwie glowy,", "to nie jedna.", "przyslowie"},
+  {"Co dwie głowy,", "to niejedna.", "przysłowie"},
   // 023
-  {"Lepiej pozno", "niz wcale.", "przyslowie"},
+  {"Lepiej pozno", "niż wcale.", "przysłowie"},
   // 024
-  {"Nie wszystko zloto,", "co sie swieci.", "przyslowie"},
+  {"Nie wszystko złoto,", "co się świeci.", "przysłowie"},
   // 025
-  {"Grosz do grosza,", "a bedzie kokosza.", "przyslowie"},
+  {"Grosz do grosza,", "a będzie kokosza.", "przysłowie"},
   // 026
-  {"Cicha woda", "brzegi rwie.", "przyslowie"},
+  {"Cicha woda", "brzegi rwie.", "przysłowie"},
   // 027
-  {"Jak sobie poscielesz,", "tak sie wyspisz.", "przyslowie"},
+  {"Jak sobie pościelesz,", "tak się wyspisz.", "przysłowie"},
   // 028
-  {"Kto pod kim dolki kopie,", "sam w nie wpada.", "przyslowie"},
+  {"Kto pod kim dołki kopie,", "sam w nie wpada.", "przysłowie"},
   // 029
-  {"Nie szata zdobi", "czlowieka.", "przyslowie"},
+  {"Nie szata zdobi", "człowieka.", "przysłowie"},
   // 030
-  {"Z kim przystajesz,", "takim sie stajesz.", "przyslowie"},
+  {"Z kim przystajesz,", "takim się stajesz.", "przysłowie"},
   // 031
-  {"Nie porzucaj nadziei,", "cokolwiek sie dzieje.", "Kochanowski"},
+  {"Nie porzucaj nadziei,", "cokolwiek się dzieje.", "Kochanowski"},
   // 032
   {"Miej serce", "i patrzaj w serce.", "Mickiewicz"},
   // 033
-  {"Szlachetne zdrowie", "docenia sie po stracie.", "insp. Kochanowski"},
+  {"Szlachetne zdrowie", "docenia się po stracie.", "insp. Kochanowski"},
   // 034
-  {"Milo szalec,", "kiedy czas po temu.", "Kochanowski"},
+  {"Miło szaleć,", "kiedy czas po temu.", "Kochanowski"},
   // 035
-  {"Ojczyzna to wielki", "zbiorowy obowiazek.", "C. K. Norwid"},
+  {"Ojczyzna to wielki", "zbiorowy obowiązek.", "C. K. Norwid"},
   // 036
-  {"Nie rzeczy nas martwia,", "lecz sady o nich.", "Epiktet"},
+  {"Nie rzeczy nas martwią,", "lecz sądy o nich.", "Epiktet"},
   // 037
-  {"Masz wladze nad umyslem,", "nie nad wydarzeniami.", "insp. Aureliusz"},
+  {"Masz władzę nad umysłem,", "nie nad wydarzeniami.", "insp. Aureliusz"},
   // 038
-  {"Najlepsza zemsta:", "nie stac sie podobnym.", "Aureliusz"},
+  {"Najlepsza zemsta:", "nie stać się podobnym.", "Aureliusz"},
   // 039
-  {"Zycie ma taki kolor,", "jaki nadaja mu mysli.", "insp. Aureliusz"},
+  {"Życie ma taki kolor,", "jaki nadają mu myśli.", "insp. Aureliusz"},
   // 040
-  {"Czas odslania", "prawde.", "Seneka"},
+  {"Czas odsłania", "prawdę.", "Seneka"},
   // 041
-  {"Nie dla szkoly,", "lecz dla zycia sie uczymy.", "Seneka"},
+  {"Nie dla szkoły,", "lecz dla życia się uczymy.", "Seneka"},
   // 042
-  {"Trudnosci wzmacniaja", "umysl.", "Seneka"},
+  {"Trudności wzmacniają", "umysł.", "Seneka"},
   // 043
-  {"Kto jest odwazny,", "jest wolny.", "Seneka"},
+  {"Kto jest odważny,", "jest wolny.", "Seneka"},
   // 044
-  {"Bogaty jest ten,", "kto ma dosc.", "stoicy"},
+  {"Bogaty jest ten,", "kto ma dość.", "stoicy"},
   // 045
-  {"Zacznij od tego,", "co zalezy od ciebie.", "stoicy"},
+  {"Zacznij od tego,", "co zależy od ciebie.", "stoicy"},
   // 046
-  {"Nie rzeczy nas rania,", "lecz nasze sady.", "insp. Epiktet"},
+  {"Nie rzeczy nas ranią,", "lecz nasze sądy.", "insp. Epiktet"},
   // 047
-  {"Kto panuje nad soba,", "ma najwieksza sile.", "insp. Seneka"},
+  {"Kto panuje nad sobą,", "ma największą siłę.", "insp. Seneka"},
   // 048
-  {"Malo potrzeba temu,", "kto ma umiar.", "insp. stoicy"},
+  {"Mało potrzeba temu,", "kto ma umiar.", "insp. stoicy"},
   // 049
-  {"Nie zwlekaj z zyciem,", "bo czas nie czeka.", "insp. Seneka"},
+  {"Nie zwlekaj z życiem,", "bo czas nie czeka.", "insp. Seneka"},
   // 050
-  {"Poznaj siebie,", "a latwiej poznasz swiat.", "insp. Sokrates"},
+  {"Poznaj siebie,", "a łatwiej poznasz świat.", "insp. Sokrates"},
   // 051
-  {"Wszystko plynie,", "nic nie stoi w miejscu.", "insp. Heraklit"},
+  {"Wszystko płynie,", "nic nie stoi w miejscu.", "insp. Heraklit"},
   // 052
-  {"Srodek drogi", "uczy rownowagi.", "insp. Arystoteles"},
+  {"Środek drogi", "uczy równowagi.", "insp. Arystoteles"},
   // 053
-  {"Czlowiek staje sie tym,", "co powtarza.", "insp. Arystoteles"},
+  {"Człowiek staje się tym,", "co powtarza.", "insp. Arystoteles"},
   // 054
-  {"Spokoj zaczyna sie tam,", "gdzie konczy sie przymus.", "insp. stoicy"},
+  {"Spokój zaczyna się tam,", "gdzie kończy się przymus.", "insp. stoicy"},
   // 055
-  {"Najwazniejsze bywa", "niewidoczne w pospiechu.", "insp. Maly Ksiaze"},
+  {"Najważniejsze bywa", "niewidoczne w pośpiechu.", "insp. Mały Książę"},
   // 056
-  {"Oswajasz to,", "czemu dajesz czas.", "insp. Maly Ksiaze"},
+  {"Oswajasz to,", "czemu dajesz czas.", "insp. Mały Książę"},
   // 057
-  {"Jedna roza wystarczy,", "jesli naprawde ja widzisz.", "insp. Maly Ksiaze"},
+  {"Jedna róża wystarczy,", "jeśli naprawdę ją widzisz.", "insp. Mały Książę"},
   // 058
-  {"Dobrze widzi sie", "spokojnym sercem.", "insp. Maly Ksiaze"},
+  {"Dobrze widzi się", "spokojnym sercem.", "insp. Mały Książę"},
   // 059
-  {"Droga uczy wtedy,", "gdy nia idziesz.", "motto codzienne"},
+  {"Droga uczy wtedy,", "gdy nią idziesz.", "motto"},
   // 060
-  {"Marzenie potrzebuje", "pierwszego kroku.", "motto codzienne"},
+  {"Marzenie potrzebuje", "pierwszego kroku.", "motto"},
   // 061
-  {"Nie kazdy skarb", "blyszczy od razu.", "motto codzienne"},
+  {"Nie każdy skarb", "błyszczy od razu.", "motto"},
   // 062
-  {"Sluchaj ciszej,", "a uslyszysz wiecej.", "motto codzienne"},
+  {"Słuchaj ciszej,", "a usłyszysz więcej.", "motto"},
   // 063
-  {"To, czego szukasz,", "czasem wraca do domu.", "motto codzienne"},
+  {"To, czego szukasz,", "czasem wraca do domu.", "motto"},
   // 064
-  {"Zrob jedna rzecz", "dobrze.", "motto codzienne"},
+  {"Zrób jedną rzecz", "dobrze.", "motto"},
   // 065
-  {"Domykaj zamiast", "dokladac.", "motto codzienne"},
+  {"Domykaj zamiast", "dokładać.", "motto"},
   // 066
-  {"Mniej pospiechu,", "wiecej uwagi.", "motto codzienne"},
+  {"Mniej pośpiechu,", "więcej uwagi.", "motto"},
   // 067
-  {"Dzis wystarczy", "prosty krok.", "motto codzienne"},
+  {"Dziś wystarczy", "prosty krok.", "motto"},
   // 068
-  {"Niech dzien ma miejsce", "na oddech.", "motto codzienne"},
+  {"Niech dzień ma miejsce", "na oddech.", "motto"},
   // 069
-  {"Spokoj tez bywa", "decyzja.", "motto codzienne"},
+  {"Spokój też bywa", "decyzją.", "motto"},
   // 070
-  {"Maly postep nadal", "jest postepem.", "motto codzienne"},
+  {"Mały postęp nadal", "jest postępem.", "motto"},
   // 071
-  {"Nie wszystko", "naraz.", "motto codzienne"},
+  {"Nie wszystko", "naraz.", "motto"},
   // 072
-  {"Zostaw troche sily", "na jutro.", "motto codzienne"},
+  {"Zostaw trochę siły", "na jutro.", "motto"},
   // 073
-  {"Zadbaj o to,", "co najblizsze.", "motto codzienne"},
+  {"Zadbaj o to,", "co najbliższe.", "motto"},
   // 074
-  {"Cisza czasem mowi", "wiecej niz odpowiedz.", "motto o ciszy"},
+  {"Cisza czasem mówi", "więcej niż odpowiedź.", "motto"},
   // 075
-  {"Nie kazdy dzien musi", "byc wielkim krokiem.", "motto codzienne"},
+  {"Nie każdy dzień musi", "być wielkim krokiem.", "motto"},
   // 076
-  {"Zacznij spokojnie,", "a dalej pojdzie latwiej.", "motto codzienne"},
+  {"Zacznij spokojnie,", "a dalej pójdzie łatwiej.", "motto"},
   // 077
-  {"Najpierw oddech,", "potem decyzja.", "motto codzienne"},
+  {"Najpierw oddech,", "potem decyzja.", "motto"},
   // 078
-  {"Male rzeczy robione dobrze", "zmieniaja duze sprawy.", "motto codzienne"},
+  {"Małe rzeczy robione dobrze", "zmieniają duże sprawy.", "motto"},
   // 079
-  {"Nie gon wszystkiego,", "wybierz to, co wazne.", "motto codzienne"},
+  {"Nie goń wszystkiego,", "wybierz to, co ważne.", "motto"},
   // 080
-  {"Dzien nie musi byc szybki,", "by byl dobry.", "motto codzienne"},
+  {"Dzień nie musi być szybki,", "by był dobry.", "motto"},
   // 081
-  {"Porzadek zaczyna sie", "od jednej rzeczy.", "motto codzienne"},
+  {"Porządek zaczyna się", "od jednej rzeczy.", "motto"},
   // 082
-  {"Nie odkladaj zycia", "na pozniej.", "motto codzienne"},
+  {"Nie odkładaj życia", "na później.", "motto"},
   // 083
-  {"Spokoj nie przychodzi sam,", "zrob mu miejsce.", "motto codzienne"},
+  {"Spokój nie przychodzi sam,", "zrób mu miejsce.", "motto"},
   // 084
-  {"Kto pyta,", "nie bladzi tak dlugo.", "motto codzienne"},
+  {"Kto pyta,", "nie błądzi tak długo.", "motto"},
   // 085
-  {"Najtrudniej zaczac,", "potem droga uczy.", "motto codzienne"},
+  {"Najtrudniej zacząć,", "potem droga uczy.", "motto"},
   // 086
-  {"Nie wszystko trzeba", "naprawic dzis.", "motto codzienne"},
+  {"Nie wszystko trzeba", "naprawić dziś.", "motto"},
   // 087
-  {"Czasem mniej znaczy", "wiecej miejsca.", "motto codzienne"},
+  {"Czasem mniej znaczy", "więcej miejsca.", "motto"},
   // 088
-  {"Uwaga jest swiatlem", "dla prostych spraw.", "motto o uwadze"},
+  {"Uwaga jest światłem", "dla prostych spraw.", "motto"},
   // 089
-  {"Nie kazda strata", "jest koncem drogi.", "motto codzienne"},
+  {"Nie każda strata", "jest końcem drogi.", "motto"},
   // 090
-  {"Zostaw za soba to,", "co nie niesie dalej.", "motto codzienne"},
+  {"Zostaw za sobą to,", "co nie niesie dalej.", "motto"},
   // 091
-  {"Niech prostota", "pracuje za ciebie.", "motto codzienne"},
+  {"Niech prostota", "pracuje za ciebie.", "motto"},
   // 092
-  {"Dobry rytm", "jest lepszy niz pospiech.", "motto codzienne"},
+  {"Dobry rytm", "jest lepszy niż pośpiech.", "motto"},
   // 093
-  {"Jedna dobra decyzja", "porzadkuje caly dzien.", "motto codzienne"},
+  {"Jedna dobra decyzja", "porządkuje cały dzień.", "motto"},
   // 094
-  {"Nie walcz z cieniem,", "zapal swiatlo.", "motto codzienne"},
+  {"Nie walcz z cieniem,", "zapal światło.", "motto"},
   // 095
-  {"Tam, gdzie jest uwaga,", "rosnie sens.", "motto o uwadze"},
+  {"Tam, gdzie jest uwaga,", "rośnie sens.", "motto"},
   // 096
-  {"Nie kazda odpowiedz", "przychodzi od razu.", "motto codzienne"},
+  {"Nie każda odpowiedź", "przychodzi od razu.", "motto"},
   // 097
-  {"Zaufaj krokowi,", "nie tylko planowi.", "motto codzienne"},
+  {"Zaufaj krokowi,", "nie tylko planowi.", "motto"},
   // 098
-  {"Dobra droga nie zawsze", "jest najkrotsza.", "motto codzienne"},
+  {"Dobra droga nie zawsze", "jest najkrótsza.", "motto"},
   // 099
-  {"Nie musisz wiedziec wszystkiego,", "by ruszyc.", "motto codzienne"},
+  {"Nie musisz wiedzieć wszystkiego,", "by ruszyć.", "motto"},
   // 100
-  {"Kiedy brakuje sil,", "zwolnij, nie rezygnuj.", "motto codzienne"},
+  {"Kiedy brakuje sił,", "zwolnij, nie rezygnuj.", "motto"},
   // 101
-  {"Czasem odwage widac", "w spokojnym wyborze.", "motto codzienne"},
+  {"Czasem odwagę widać", "w spokojnym wyborze.", "motto"},
   // 102
-  {"Nie karm chaosu", "wlasna uwaga.", "motto o uwadze"},
+  {"Nie karm chaosu", "własną uwagą.", "motto"},
   // 103
-  {"Mniej rzeczy,", "wiecej miejsca na zycie.", "motto codzienne"},
+  {"Mniej rzeczy,", "więcej miejsca na życie.", "motto"},
   // 104
-  {"Dobry poczatek", "to polowa spokoju.", "motto codzienne"},
+  {"Dobry początek", "to połowa spokoju.", "motto"},
   // 105
-  {"Nie wszystko, co ciche,", "jest puste.", "motto o ciszy"},
+  {"Nie wszystko, co ciche,", "jest puste.", "motto"},
   // 106
-  {"Cierpliwosc to sila", "bez halasu.", "motto stoickie"},
+  {"Cierpliwość to siła", "bez hałasu.", "motto"},
   // 107
-  {"Zmien tempo,", "nie cel.", "motto codzienne"},
+  {"Zmień tempo,", "nie cel.", "motto"},
   // 108
-  {"To, co wazne,", "nie zawsze krzyczy.", "motto codzienne"},
+  {"To, co ważne,", "nie zawsze krzyczy.", "motto"},
   // 109
-  {"Najpierw zrob miejsce,", "potem dodawaj.", "motto codzienne"},
+  {"Najpierw zrób miejsce,", "potem dodawaj.", "motto"},
   // 110
-  {"Niech dzien bedzie prosty,", "ale pelny uwagi.", "motto codzienne"},
+  {"Niech dzień będzie prosty,", "ale pełny uwagi.", "motto"},
   // 111
-  {"Kazdy poranek daje", "nowy margines.", "motto codzienne"},
+  {"Każdy poranek daje", "nowy margines.", "motto"},
   // 112
-  {"Nie licz tylko czasu,", "licz obecnosc.", "motto codzienne"},
+  {"Nie licz tylko czasu,", "licz obecność.", "motto"},
   // 113
-  {"Drobny lad", "ratuje duzy dzien.", "motto codzienne"},
+  {"Drobny ład", "ratuje duży dzień.", "motto"},
   // 114
-  {"Mysl jasno,", "dzialaj spokojnie.", "motto codzienne"},
+  {"Myśl jasno,", "działaj spokojnie.", "motto"},
   // 115
-  {"Nie przyspieszaj serca", "dla cudzych spraw.", "motto codzienne"},
+  {"Nie przyspieszaj serca", "dla cudzych spraw.", "motto"},
   // 116
-  {"Czasem najlepszy plan", "to mniej planow.", "motto codzienne"},
+  {"Czasem najlepszy plan", "to mniej planów.", "motto"},
   // 117
-  {"Zrob mniej,", "ale naprawde.", "motto codzienne"},
+  {"Zrób mniej,", "ale naprawdę.", "motto"},
   // 118
-  {"Niech twoje tak", "ma swoj sens.", "motto codzienne"},
+  {"Niech twoje tak", "ma swój sens.", "motto"},
   // 119
-  {"Nie kazde nie", "jest porazka.", "motto codzienne"},
+  {"Nie każde nie", "jest porażką.", "motto"},
   // 120
-  {"Granica tez moze", "byc troska.", "motto codzienne"},
+  {"Granica też może", "być troską.", "motto"},
   // 121
-  {"Dobra mysl", "potrzebuje ciszy.", "motto o ciszy"},
+  {"Dobra myśl", "potrzebuje ciszy.", "motto"},
   // 122
-  {"Zbyt wiele naraz", "gasi uwage.", "motto o uwadze"},
+  {"Zbyt wiele naraz", "gasi uwagę.", "motto"},
   // 123
-  {"Nawet maly krok", "zmienia miejsce.", "motto codzienne"},
+  {"Nawet mały krok", "zmienia miejsce.", "motto"},
   // 124
-  {"Roslina nie spieszy sie,", "a jednak rosnie.", "motto przyrodnicze"},
+  {"Roślina nie spieszy się,", "a jednak rośnie.", "motto"},
   // 125
-  {"Korzen pracuje cicho,", "ale trzyma calosc.", "motto przyrodnicze"},
+  {"Korzeń pracuje cicho,", "ale trzyma całość.", "motto"},
   // 126
-  {"Kazdy lisc", "szuka swojego swiatla.", "motto przyrodnicze"},
+  {"Każdy liść", "szuka swojego światła.", "motto"},
   // 127
-  {"Wilgoc uczy cierpliwosci,", "swiatlo uczy miary.", "motto ogrodnika"},
+  {"Wilgoć uczy cierpliwości,", "światło uczy miary.", "motto"},
   // 128
-  {"Nie przelewaj troski,", "daj korzeniom oddech.", "motto ogrodnika"},
+  {"Nie przelewaj troski,", "daj korzeniom oddech.", "motto"},
   // 129
-  {"Najpierw obserwuj,", "potem podlewaj.", "motto ogrodnika"},
+  {"Najpierw obserwuj,", "potem podlewaj.", "motto"},
   // 130
-  {"Mchy rosna tam,", "gdzie czas zwalnia.", "motto przyrodnicze"},
+  {"Mchy rosną tam,", "gdzie czas zwalnia.", "motto"},
   // 131
-  {"Las nie potrzebuje halasu,", "by byc zywy.", "motto przyrodnicze"},
+  {"Las nie potrzebuje hałasu,", "by być żywy.", "motto"},
   // 132
-  {"Cien tez jest", "czescia wzrostu.", "motto przyrodnicze"},
+  {"Cień też jest", "częścią wzrostu.", "motto"},
   // 133
-  {"Dobre swiatlo", "nie musi krzyczec.", "motto ogrodnika"},
+  {"Dobre światło", "nie musi krzyczeć.", "motto"},
   // 134
-  {"Nie zgaduj,", "zmierz.", "motto techniczne"},
+  {"Nie zgaduj,", "zmierz.", "motto"},
   // 135
-  {"Dobry pomiar", "oszczedza domysly.", "motto techniczne"},
+  {"Dobry pomiar", "oszczędza domysły.", "motto"},
   // 136
-  {"Najpierw schemat,", "potem lutowanie.", "motto techniczne"},
+  {"Najpierw schemat,", "potem lutowanie.", "motto"},
   // 137
-  {"Prosty uklad", "rzadziej zawodzi.", "motto techniczne"},
+  {"Prosty układ", "rzadziej zawodzi.", "motto"},
   // 138
-  {"Kazdy przewod", "lubi miec opis.", "motto techniczne"},
+  {"Każdy przewód", "lubi mieć opis.", "motto"},
   // 139
-  {"Sprawdz mase,", "zanim szukasz bledu.", "motto techniczne"},
+  {"Sprawdź masę,", "zanim szukasz błędu.", "motto"},
   // 140
-  {"Kod dziala lepiej,", "gdy jest prosty.", "motto techniczne"},
+  {"Kod działa lepiej,", "gdy jest prosty.", "motto"},
   // 141
-  {"Jedna poprawka naraz", "ulatwia diagnoze.", "motto techniczne"},
+  {"Jedna poprawka naraz", "ułatwia diagnozę.", "motto"},
   // 142
-  {"Nie ufaj kablom,", "ktorych nie sprawdziles.", "motto techniczne"},
+  {"Nie ufaj kablom,", "których nie sprawdziłeś.", "motto"},
   // 143
-  {"Najlepszy system", "dziala bez uwagi.", "motto techniczne"},
+  {"Najlepszy system", "działa bez uwagi.", "motto"},
   // 144
-  {"Cisza nie jest pusta,", "jest pelna sladow.", "motto poetyckie"},
+  {"Cisza nie jest pusta,", "jest pełna śladów.", "motto"},
   // 145
-  {"Poranek otwiera drzwi,", "ktorych noc nie widzi.", "motto poetyckie"},
+  {"Poranek otwiera drzwi,", "których noc nie widzi.", "motto"},
   // 146
-  {"Kropla pamieta droge", "do kamienia.", "motto poetyckie"},
+  {"Kropla pamięta drogę", "do kamienia.", "motto"},
   // 147
-  {"Mgla nie ukrywa swiata,", "tylko go wycisza.", "motto poetyckie"},
+  {"Mgła nie ukrywa świata,", "tylko go wycisza.", "motto"},
   // 148
-  {"Cien pokazuje,", "ze swiatlo jest blisko.", "motto poetyckie"},
+  {"Cień pokazuje,", "że światło jest blisko.", "motto"},
   // 149
-  {"Niebo miesci sie czasem", "w jednej kropli.", "motto poetyckie"},
+  {"Niebo mieści się czasem", "w jednej kropli.", "motto"},
   // 150
-  {"Najcichsze rzeczy", "zostaja najdluzej.", "motto poetyckie"},
+  {"Najcichsze rzeczy", "zostają najdłużej.", "motto"},
   // 151
-  {"Dzien dojrzewa powoli,", "jak owoc.", "motto poetyckie"},
+  {"Dzień dojrzewa powoli,", "jak owoc.", "motto"},
   // 152
-  {"Kamien tez pamieta", "dotyk wody.", "motto poetyckie"},
+  {"Kamień też pamięta", "dotyk wody.", "motto"},
   // 153
-  {"Tam, gdzie milknie pospiech,", "zaczyna sie sens.", "motto poetyckie"},
+  {"Tam, gdzie milknie pośpiech,", "zaczyna się sens.", "motto"},
   // 154
-  {"Oddychaj.", "To tez dzialanie.", "motto codzienne"},
+  {"Oddychaj.", "To też działanie.", "motto"},
   // 155
-  {"Mniej szumu.", "Wiecej sensu.", "motto codzienne"},
+  {"Mniej szumu.", "Więcej sensu.", "motto"},
   // 156
-  {"Zmierz.", "Nie zgaduj.", "motto techniczne"},
+  {"Zmierz.", "Nie zgaduj.", "motto"},
   // 157
-  {"Zwolnij.", "Nie rezygnuj.", "motto stoickie"},
+  {"Zwolnij.", "Nie rezygnuj.", "motto"},
   // 158
-  {"Patrz uwaznie.", "Swiat odpowiada.", "motto poetyckie"},
+  {"Patrz uważnie.", "Świat odpowiada.", "motto"},
   // 159
-  {"Nie wszystko trzeba", "nazywac od razu.", "motto codzienne"},
+  {"Nie wszystko trzeba", "nazywać od razu.", "motto"},
   // 160
-  {"Daj sprawom czas,", "ale nie oddawaj steru.", "motto codzienne"},
+  {"Daj sprawom czas,", "ale nie oddawaj steru.", "motto"},
   // 161
-  {"Zycie lubi ludzi,", "ktorzy zaczynaja.", "motto codzienne"},
+  {"Życie lubi ludzi,", "którzy zaczynają.", "motto"},
   // 162
-  {"Nie zgub dnia", "w drobnych alarmach.", "motto codzienne"},
+  {"Nie zgub dnia", "w drobnych alarmach.", "motto"},
   // 163
-  {"Czasem cisza", "naprawia wiecej niz slowa.", "motto o ciszy"},
+  {"Czasem cisza", "naprawia więcej niż słowa.", "motto"},
   // 164
-  {"Nie czekaj na pewnosc,", "zrob maly test.", "motto techniczne"},
+  {"Nie czekaj na pewność,", "zrób mały test.", "motto"},
   // 165
-  {"Najpierw wersja prosta,", "potem ladna.", "motto techniczne"},
+  {"Najpierw wersja prosta,", "potem ładna.", "motto"},
   // 166
-  {"Dobry projekt", "ma mniej tajemnic.", "motto techniczne"},
+  {"Dobry projekt", "ma mniej tajemnic.", "motto"},
   // 167
-  {"Kazdy blad", "jest sladami przyczyny.", "motto techniczne"},
+  {"Każdy błąd", "jest śladem przyczyny.", "motto"},
   // 168
-  {"Jesli cos grzeje sie,", "szukaj straty.", "motto techniczne"},
+  {"Jeśli coś grzeje się,", "szukaj straty.", "motto"},
   // 169
-  {"Stabilne zasilanie", "daje spokojny kod.", "motto techniczne"},
+  {"Stabilne zasilanie", "daje spokojny kod.", "motto"},
   // 170
-  {"Mniej kabli,", "mniej podejrzen.", "motto techniczne"},
+  {"Mniej kabli,", "mniej podejrzen.", "motto"},
   // 171
-  {"Opisany przewod", "oszczedza godzine.", "motto techniczne"},
+  {"Opisany przewód", "oszczędza godzinę.", "motto"},
   // 172
-  {"Nie naprawiaj wszystkiego", "jednym ruchem.", "motto techniczne"},
+  {"Nie naprawiaj wszystkiego", "jednym ruchem.", "motto"},
   // 173
-  {"Testuj powoli,", "notuj dokladnie.", "motto techniczne"},
+  {"Testuj powoli,", "notuj dokładnie.", "motto"},
   // 174
-  {"Swiatlo jest nawozem,", "gdy ma dobra miare.", "motto ogrodnika"},
+  {"Światło jest nawozem,", "gdy ma dobrą miarę.", "motto"},
   // 175
-  {"Korzenie lubia spokoj", "bardziej niz pospiech.", "motto ogrodnika"},
+  {"Korzenie lubią spokój", "bardziej niż pośpiech.", "motto"},
   // 176
-  {"Lisc powie wiecej", "niz etykieta.", "motto ogrodnika"},
+  {"Liść powie więcej", "niż etykieta.", "motto"},
   // 177
-  {"Nie kazda plama", "jest choroba.", "motto ogrodnika"},
+  {"Nie każda plama", "jest chorobą.", "motto"},
   // 178
-  {"Wilgoc bez ruchu", "szybko staje sie ciezka.", "motto ogrodnika"},
+  {"Wilgoć bez ruchu", "szybko staje się ciężka.", "motto"},
   // 179
-  {"Roslina prosi ciszej", "niz czlowiek.", "motto przyrodnicze"},
+  {"Roślina prosi ciszej", "niż człowiek.", "motto"},
   // 180
-  {"Moss lubi czas,", "nie poganianie.", "motto przyrodnicze"},
+  {"Mech lubi czas,", "nie poganianie.", "motto"},
   // 181
-  {"W naturze porzadek", "nie zawsze jest prosty.", "motto przyrodnicze"},
+  {"W naturze porządek", "nie zawsze jest prosty.", "motto"},
   // 182
-  {"Las sklada sie", "z cierpliwych szczegolow.", "motto przyrodnicze"},
+  {"Las składa się", "z cierpliwych szczegółów.", "motto"},
   // 183
-  {"Najmniejszy lisc", "tez szuka nieba.", "motto przyrodnicze"},
+  {"Najmniejszy liść", "też szuka nieba.", "motto"},
   // 184
-  {"Niech praca bedzie", "mniejsza od sensu.", "motto o pracy"},
+  {"Niech praca będzie", "mniejsza od sensu.", "motto"},
   // 185
-  {"Rob swoje,", "ale nie gub siebie.", "motto o pracy"},
+  {"Rób swoje,", "ale nie gub siebie.", "motto"},
   // 186
-  {"System rosnie dobrze,", "gdy ma proste zasady.", "motto o pracy"},
+  {"System rośnie dobrze,", "gdy ma proste zasady.", "motto"},
   // 187
-  {"Nie dokladaj zadan,", "domykaj zaczete.", "motto o pracy"},
+  {"Nie dokładaj zadań,", "domykaj zaczęte.", "motto"},
   // 188
-  {"Zrob najwazniejsze,", "reszta poczeka.", "motto o pracy"},
+  {"Zrób najważniejsze,", "reszta poczeka.", "motto"},
   // 189
-  {"Dobra lista", "skraca chaos.", "motto o pracy"},
+  {"Dobra lista", "skraca chaos.", "motto"},
   // 190
-  {"Jedno skonczone", "wazy wiecej niz piec planow.", "motto o pracy"},
+  {"Jedno skończone", "waży więcej niż pięć planów.", "motto"},
   // 191
-  {"Nie myl ruchu", "z postepem.", "motto o pracy"},
+  {"Nie myl ruchu", "z postępem.", "motto"},
   // 192
-  {"Praca bez przerwy", "traci ostrosc.", "motto o pracy"},
+  {"Praca bez przerwy", "traci ostrość.", "motto"},
   // 193
-  {"Najpierw sens,", "potem tempo.", "motto o pracy"},
+  {"Najpierw sens,", "potem tempo.", "motto"},
   // 194
-  {"Czas nie wraca,", "ale uczy wyboru.", "motto o czasie"},
+  {"Czas nie wraca,", "ale uczy wyboru.", "motto"},
   // 195
-  {"Dzien ma tylko tyle,", "ile w nim uwagi.", "motto o czasie"},
+  {"Dzień ma tylko tyle,", "ile w nim uwagi.", "motto"},
   // 196
-  {"Nie kazda minuta", "musi cos udowadniac.", "motto o czasie"},
+  {"Nie każda minuta", "musi coś udowadniać.", "motto"},
   // 197
-  {"Poranek jest szkicem", "calego dnia.", "motto o czasie"},
+  {"Poranek jest szkicem", "całego dnia.", "motto"},
   // 198
-  {"Wieczor pokazuje,", "co bylo naprawde wazne.", "motto o czasie"},
+  {"Wieczór pokazuje,", "co było naprawdę ważne.", "motto"},
   // 199
-  {"Nie oszczedzaj czasu", "na rzeczach bez sensu.", "motto o czasie"},
+  {"Nie oszczędzaj czasu", "na rzeczach bez sensu.", "motto"},
   // 200
-  {"Czas lubi tych,", "ktorzy wybieraja.", "motto o czasie"},
+  {"Czas lubi tych,", "którzy wybierają.", "motto"},
   // 201
-  {"Jedna godzina ciszy", "zmienia caly dzien.", "motto o czasie"},
+  {"Jedna godzina ciszy", "zmienia cały dzień.", "motto"},
   // 202
-  {"Nie wszystko dojrzewa", "w tym samym tempie.", "motto o czasie"},
+  {"Nie wszystko dojrzewa", "w tym samym tempie.", "motto"},
   // 203
-  {"Najlepszy moment", "czesto zaczyna sie teraz.", "motto o czasie"},
+  {"Najlepszy moment", "często zaczyna się teraz.", "motto"},
   // 204
-  {"Ucz sie wolniej,", "ale glebiej.", "motto naukowe"},
+  {"Ucz się wolniej,", "ale głębiej.", "motto"},
   // 205
-  {"Pytanie jest latarnia", "dla mysli.", "motto naukowe"},
+  {"Pytanie jest latarnią", "dla myśli.", "motto"},
   // 206
-  {"Nie wierz pierwszej mysli,", "sprawdz druga.", "motto naukowe"},
+  {"Nie wierz pierwszej myśli,", "sprawdź drugą.", "motto"},
   // 207
-  {"Dane bez uwagi", "sa tylko szumem.", "motto naukowe"},
+  {"Dane bez uwagi", "są tylko szumem.", "motto"},
   // 208
-  {"Kazdy wynik", "potrzebuje kontekstu.", "motto naukowe"},
+  {"Każdy wynik", "potrzebuje kontekstu.", "motto"},
   // 209
-  {"Niepewnosc", "to poczatek badania.", "motto naukowe"},
+  {"Niepewność", "to początek badania.", "motto"},
   // 210
-  {"Eksperyment lubi", "czyste notatki.", "motto naukowe"},
+  {"Eksperyment lubi", "czyste notatki.", "motto"},
   // 211
-  {"Najpierw obserwacja,", "potem teoria.", "motto naukowe"},
+  {"Najpierw obserwacja,", "potem teoria.", "motto"},
   // 212
-  {"Blad pomiaru", "tez jest informacja.", "motto naukowe"},
+  {"Błąd pomiaru", "też jest informacją.", "motto"},
   // 213
-  {"Kto mierzy,", "ten mniej zgaduje.", "motto naukowe"},
+  {"Kto mierzy,", "ten mniej zgaduje.", "motto"},
   // 214
-  {"Mniej oczekiwan,", "wiecej spokoju.", "motto stoickie"},
+  {"Mniej oczekiwań,", "więcej spokoju.", "motto"},
   // 215
-  {"Nie wszystko zalezy", "od twojej woli.", "motto stoickie"},
+  {"Nie wszystko zależy", "od twojej woli.", "motto"},
   // 216
-  {"Wybierz reakcje,", "gdy nie wybierasz zdarzen.", "motto stoickie"},
+  {"Wybierz reakcję,", "gdy nie wybierasz zdarzeń.", "motto"},
   // 217
-  {"Spokoj to trening,", "nie przypadek.", "motto stoickie"},
+  {"Spokój to trening,", "nie przypadek.", "motto"},
   // 218
-  {"Najpierw odroznij,", "co jest twoje.", "motto stoickie"},
+  {"Najpierw odróżnij,", "co jest twoje.", "motto"},
   // 219
-  {"Nie oddawaj dnia", "cudzym nastrojom.", "motto stoickie"},
+  {"Nie oddawaj dnia", "cudzym nastrojom.", "motto"},
   // 220
-  {"Umiar daje wiecej", "niz nadmiar.", "motto stoickie"},
+  {"Umiar daje więcej", "niż nadmiar.", "motto"},
   // 221
-  {"Czlowiek wolny", "nie musi wygrywac wszystkiego.", "motto stoickie"},
+  {"Człowiek wolny", "nie musi wygrywać wszystkiego.", "motto"},
   // 222
-  {"Nie nos jutra", "na dzisiejszych barkach.", "motto stoickie"},
+  {"Nie noś jutra", "na dzisiejszych barkach.", "motto"},
   // 223
-  {"Sila bywa cicha,", "gdy zna swoj cel.", "motto stoickie"},
+  {"Siła bywa cicha,", "gdy zna swój cel.", "motto"},
   // 224
-  {"Najprostsza droga", "nie zawsze jest latwa.", "motto filozoficzne"},
+  {"Najprostsza droga", "nie zawsze jest łatwa.", "motto"},
   // 225
-  {"Prawda nie potrzebuje", "glosnego tonu.", "motto filozoficzne"},
+  {"Prawda nie potrzebuje", "głośnego tonu.", "motto"},
   // 226
-  {"Wolnosc zaczyna sie", "od odpowiedzialnosci.", "motto filozoficzne"},
+  {"Wolność zaczyna się", "od odpowiedzialności.", "motto"},
   // 227
-  {"Kto zna granice,", "ma wiecej miejsca.", "motto filozoficzne"},
+  {"Kto zna granice,", "ma więcej miejsca.", "motto"},
   // 228
-  {"Mysl bez ciszy", "szybko staje sie echem.", "motto filozoficzne"},
+  {"Myśl bez ciszy", "szybko staje się echem.", "motto"},
   // 229
-  {"Sens rodzi sie", "z uwaznego wyboru.", "motto filozoficzne"},
+  {"Sens rodzi się", "z uważnego wyboru.", "motto"},
   // 230
-  {"Nie kazde pytanie", "chce szybkiej odpowiedzi.", "motto filozoficzne"},
+  {"Nie każde pytanie", "chce szybkiej odpowiedzi.", "motto"},
   // 231
-  {"Czlowiek rosnie tam,", "gdzie przyjmuje prawde.", "motto filozoficzne"},
+  {"Człowiek rośnie tam,", "gdzie przyjmuje prawdę.", "motto"},
   // 232
-  {"Prostota bywa", "najtrudniejsza forma.", "motto filozoficzne"},
+  {"Prostota bywa", "najtrudniejsza forma.", "motto"},
   // 233
-  {"Nie kazda droga", "prowadzi na zewnatrz.", "motto filozoficzne"},
+  {"Nie każda droga", "prowadzi na zewnątrz.", "motto"},
   // 234
-  {"Ksiazka jest drzwiami", "bez klamki.", "motto literackie"},
+  {"Książka jest drzwiami", "bez klamki.", "motto"},
   // 235
-  {"Jedno zdanie", "moze zapalic dzien.", "motto literackie"},
+  {"Jedno zdanie", "może zapalić dzień.", "motto"},
   // 236
-  {"Slowa lubia cisze", "bardziej niz pospiech.", "motto literackie"},
+  {"Słowa lubią ciszę", "bardziej niż pośpiech.", "motto"},
   // 237
-  {"Czytaj powoli,", "mysl szeroko.", "motto literackie"},
+  {"Czytaj powoli,", "myśl szeroko.", "motto"},
   // 238
-  {"Dobra mysl", "wraca po czasie.", "motto literackie"},
+  {"Dobra myśl", "wraca po czasie.", "motto"},
   // 239
-  {"Opowiesc zaczyna sie tam,", "gdzie ktos slucha.", "motto literackie"},
+  {"Opowieść zaczyna się tam,", "gdzie ktoś słucha.", "motto"},
   // 240
-  {"Nie kazda cisza", "jest koncem rozmowy.", "motto literackie"},
+  {"Nie każda cisza", "jest końcem rozmowy.", "motto"},
   // 241
-  {"Pamiec mieszka", "w malych zdaniach.", "motto literackie"},
+  {"Pamięć mieszka", "w małych zdaniach.", "motto"},
   // 242
-  {"Krotkie slowo", "moze miec dlugi cien.", "motto literackie"},
+  {"Krótkie słowo", "może mieć długi cień.", "motto"},
   // 243
-  {"Pisz prosto,", "jesli mysl jest wazna.", "motto literackie"},
+  {"Pisz prosto,", "jeśli myśl jest ważna.", "motto"},
   // 244
-  {"Zima uczy korzenie", "cierpliwosci.", "motto przyrodnicze"},
+  {"Zima uczy korzenie", "cierpliwości.", "motto"},
   // 245
-  {"Wiosna zaczyna sie", "od malego znaku.", "motto przyrodnicze"},
+  {"Wiosna zaczyna się", "od małego znaku.", "motto"},
   // 246
-  {"Lato nie pyta,", "czy jestes gotowy.", "motto przyrodnicze"},
+  {"Lato nie pyta,", "czy jesteś gotowy.", "motto"},
   // 247
-  {"Jesien porzadkuje", "to, co dojrzalo.", "motto przyrodnicze"},
+  {"Jesień porządkuje", "to, co dojrzało.", "motto"},
   // 248
-  {"Deszcz nie przeszkadza", "tym, ktorzy rosna.", "motto przyrodnicze"},
+  {"Deszcz nie przeszkadza", "tym, którzy rosną.", "motto"},
   // 249
-  {"Slonce nie wybiera", "tylko ladnych lisci.", "motto przyrodnicze"},
+  {"Słońce nie wybiera", "tylko ładnych liści.", "motto"},
   // 250
-  {"Nasiono zna droge,", "zanim zobaczy niebo.", "motto przyrodnicze"},
+  {"Nasiono zna drogę,", "zanim zobaczy niebo.", "motto"},
   // 251
-  {"Gleba pamieta", "kazda troske.", "motto ogrodnika"},
+  {"Gleba pamięta", "każdą troskę.", "motto"},
   // 252
-  {"Nie ciagnij rosliny", "za lisc.", "motto ogrodnika"},
+  {"Nie ciągnij rośliny", "za liść.", "motto"},
   // 253
-  {"Cierpliwy ogrod", "odplaca cisza.", "motto ogrodnika"},
+  {"Cierpliwy ogród", "odpłaca ciszą.", "motto"},
   // 254
-  {"Dobre pytanie", "jest polowa drogi.", "motto naukowe"},
+  {"Dobre pytanie", "jest połową drogi.", "motto"},
   // 255
-  {"Mapa nie jest droga,", "ale pomaga isc.", "motto naukowe"},
+  {"Mapa nie jest drogą,", "ale pomaga iść.", "motto"},
   // 256
-  {"Hipoteza lubi", "skromnosc.", "motto naukowe"},
+  {"Hipoteza lubi", "skromnosc.", "motto"},
   // 257
-  {"Nie myl danych", "z madroscia.", "motto naukowe"},
+  {"Nie myl danych", "z mądrością.", "motto"},
   // 258
-  {"Powtarzalnosc", "buduje zaufanie.", "motto naukowe"},
+  {"Powtarzalność", "buduje zaufanie.", "motto"},
   // 259
-  {"Najpierw sprawdz,", "potem oceniaj.", "motto naukowe"},
+  {"Najpierw sprawdź,", "potem oceniaj.", "motto"},
   // 260
-  {"Wiedza rosnie tam,", "gdzie jest ciekawosc.", "motto naukowe"},
+  {"Wiedza rośnie tam,", "gdzie jest ciekawość.", "motto"},
   // 261
-  {"Ciekawosc", "otwiera zamkniete drzwi.", "motto naukowe"},
+  {"Ciekawość", "otwiera zamkniete drzwi.", "motto"},
   // 262
-  {"Myslenie zaczyna sie", "od pauzy.", "motto naukowe"},
+  {"Myślenie zaczyna się", "od pauzy.", "motto"},
   // 263
-  {"Nie boj sie nie wiem,", "boj sie udawania.", "motto naukowe"},
+  {"Nie bój się niewiedzy,", "bój się udawania.", "motto"},
   // 264
-  {"Nie komplikuj,", "jesli proste dziala.", "motto techniczne"},
+  {"Nie komplikuj,", "jeśli proste działa.", "motto"},
   // 265
-  {"Zapas pradu", "to zapas spokoju.", "motto techniczne"},
+  {"Zapas prądu", "to zapas spokoju.", "motto"},
   // 266
-  {"Dobry log", "mowi prawde po czasie.", "motto techniczne"},
+  {"Dobry log", "mówi prawdę po czasie.", "motto"},
   // 267
-  {"Restart nie jest planem,", "jest sygnalem.", "motto techniczne"},
+  {"Restart nie jest planem,", "jest sygnalem.", "motto"},
   // 268
-  {"Zanim wymienisz czesc,", "sprawdz zasilanie.", "motto techniczne"},
+  {"Zanim wymienisz część,", "sprawdź zasilanie.", "motto"},
   // 269
-  {"Kazdy projekt", "lubi dokumentacje.", "motto techniczne"},
+  {"Każdy projekt", "lubi dokumentacje.", "motto"},
   // 270
-  {"Maly test", "chroni duza prace.", "motto techniczne"},
+  {"Mały test", "chroni dużą pracę.", "motto"},
   // 271
-  {"Niech kod tlumaczy", "sam siebie.", "motto techniczne"},
+  {"Niech kod tłumaczy", "sam siebie.", "motto"},
   // 272
-  {"Dziala to malo,", "rozumiesz to wiecej.", "motto techniczne"},
+  {"Działa to mało,", "rozumiesz to więcej.", "motto"},
   // 273
-  {"Najlepsza poprawka", "nie psuje reszty.", "motto techniczne"},
+  {"Najlepsza poprawka", "nie psuje reszty.", "motto"},
   // 274
-  {"Cisza w domu", "jest malym luksusem.", "motto o ciszy"},
+  {"Cisza w domu", "jest małym luksusem.", "motto"},
   // 275
-  {"Nie kazdy spokoj", "przychodzi z zewnatrz.", "motto o spokoju"},
+  {"Nie każdy spokój", "przychodzi z zewnątrz.", "motto"},
   // 276
-  {"Spokojny czlowiek", "widzi wiecej.", "motto o spokoju"},
+  {"Spokojny człowiek", "widzi więcej.", "motto"},
   // 277
-  {"Nie dokarmiaj mysli,", "ktore kradna dzien.", "motto o spokoju"},
+  {"Nie dokarmiaj myśli,", "które kradną dzień.", "motto"},
   // 278
-  {"Zwolnij oddech,", "a dzien zmieni ton.", "motto o spokoju"},
+  {"Zwolnij oddech,", "a dzień zmieni ton.", "motto"},
   // 279
-  {"Czasem trzeba usiasc,", "by ruszyc dalej.", "motto o spokoju"},
+  {"Czasem trzeba usiąść,", "by ruszyć dalej.", "motto"},
   // 280
-  {"Nie wszystko wymaga", "twojej reakcji.", "motto o spokoju"},
+  {"Nie wszystko wymaga", "twojej reakcji.", "motto"},
   // 281
-  {"Daj sobie miejsce", "na zwykly dzien.", "motto o spokoju"},
+  {"Daj sobie miejsce", "na zwykly dzień.", "motto"},
   // 282
-  {"Spokoj nie jest pustka,", "jest porzadkiem.", "motto o spokoju"},
+  {"Spokój nie jest pustką,", "jest porządkiem.", "motto"},
   // 283
-  {"Najciszej wraca to,", "co najwazniejsze.", "motto o spokoju"},
+  {"Najciszej wraca to,", "co najważniejsze.", "motto"},
   // 284
-  {"Porazka to szkic", "lepszej proby.", "motto codzienne"},
+  {"Porażka to szkic", "lepszej próby.", "motto"},
   // 285
-  {"Nie kazdy blad", "musi zostac rana.", "motto codzienne"},
+  {"Nie każdy błąd", "musi zostać raną.", "motto"},
   // 286
-  {"Dzis nie musi", "wygrac z calym zyciem.", "motto codzienne"},
+  {"Dziś nie musi", "wygrać z całym życiem.", "motto"},
   // 287
-  {"Zostaw sobie prawo", "do poprawy.", "motto codzienne"},
+  {"Zostaw sobie prawo", "do poprawy.", "motto"},
   // 288
-  {"Niech mala rzecz", "bedzie zrobiona dobrze.", "motto codzienne"},
+  {"Niech mała rzecz", "będzie zrobiona dobrze.", "motto"},
   // 289
-  {"Odwaga czesto wyglada", "jak spokoj.", "motto codzienne"},
+  {"Odwaga często wygląda", "jak spokój.", "motto"},
   // 290
-  {"Nie czekaj na nastroj,", "zacznij od kroku.", "motto codzienne"},
+  {"Nie czekaj na nastrój,", "zacznij od kroku.", "motto"},
   // 291
-  {"To, co codzienne,", "tez buduje zycie.", "motto codzienne"},
+  {"To, co codzienne,", "też buduje życie.", "motto"},
   // 292
-  {"Najwiecej zmienia to,", "co powtarzasz.", "motto codzienne"},
+  {"Najwięcej zmienia to,", "co powtarzasz.", "motto"},
   // 293
-  {"Mniej porownan,", "wiecej obecnosci.", "motto codzienne"},
+  {"Mniej porównań,", "więcej obecności.", "motto"},
   // 294
-  {"Nie kazda droga", "potrzebuje widowni.", "motto codzienne"},
+  {"Nie każda droga", "potrzebuje widowni.", "motto"},
   // 295
-  {"Zadbaj o poczatek,", "koniec bedzie latwiejszy.", "motto codzienne"},
+  {"Zadbaj o początek,", "koniec będzie łatwiejszy.", "motto"},
   // 296
-  {"Dobre slowo", "nie traci wagi.", "motto codzienne"},
+  {"Dobre słowo", "nie traci wagi.", "motto"},
   // 297
-  {"Nie wszystko, co pilne,", "jest wazne.", "motto codzienne"},
+  {"Nie wszystko, co pilne,", "jest ważne.", "motto"},
   // 298
-  {"Najpierw czlowiek,", "potem sprawa.", "motto codzienne"},
+  {"Najpierw człowiek,", "potem sprawa.", "motto"},
   // 299
-  {"Kiedy masz wybor,", "wybierz prostote.", "motto codzienne"},
+  {"Kiedy masz wybór,", "wybierz prostotę.", "motto"},
   // 300
-  {"Nie chowaj radosci", "na specjalny dzien.", "motto codzienne"},
+  {"Nie chowaj radości", "na specjalny dzień.", "motto"},
   // 301
-  {"Maly lad", "jest poczatkiem wolnosci.", "motto codzienne"},
+  {"Mały ład", "jest początkiem wolności.", "motto"},
   // 302
-  {"Niech odpoczynek", "tez bedzie zadaniem.", "motto codzienne"},
+  {"Niech odpoczynek", "też będzie zadaniem.", "motto"},
   // 303
-  {"Zacznij od miejsca,", "w ktorym stoisz.", "motto codzienne"},
+  {"Zacznij od miejsca,", "w którym stoisz.", "motto"},
   // 304
-  {"Rzeczy proste", "lubia byc robione powoli.", "motto codzienne"},
+  {"Rzeczy proste", "lubią być robione powoli.", "motto"},
   // 305
-  {"Nie wymagaj od dnia", "zeby byl wszystkim.", "motto codzienne"},
+  {"Nie wymagaj od dnia", "żeby był wszystkim.", "motto"},
   // 306
-  {"Czasem dobra decyzja", "to nic nie dodac.", "motto codzienne"},
+  {"Czasem dobra decyzja", "to nic nie dodać.", "motto"},
   // 307
-  {"Nie kazda mysl", "zasluguje na miejsce.", "motto o uwadze"},
+  {"Nie każda myśl", "zasługuje na miejsce.", "motto"},
   // 308
-  {"Uwaga jest ogrodem,", "chwasty rosna same.", "motto o uwadze"},
+  {"Uwaga jest ogrodem,", "chwasty rosną same.", "motto"},
   // 309
-  {"To, czemu dajesz uwage,", "rosnie.", "motto o uwadze"},
+  {"To, czemu dajesz uwagę,", "rośnie.", "motto"},
   // 310
-  {"Nie rozpraszaj serca", "na drobne alarmy.", "motto o uwadze"},
+  {"Nie rozpraszaj serca", "na drobne alarmy.", "motto"},
   // 311
-  {"Patrz wolniej,", "zobaczysz wiecej.", "motto o uwadze"},
+  {"Patrz wolniej,", "zobaczysz więcej.", "motto"},
   // 312
-  {"Skupienie jest mostem", "miedzy planem a czynem.", "motto o uwadze"},
+  {"Skupienie jest mostem", "między planem a czynem.", "motto"},
   // 313
-  {"Mniej bodzcow,", "wiecej mysli.", "motto o uwadze"},
+  {"Mniej bodźców,", "więcej myśli.", "motto"},
   // 314
-  {"Nie kazde powiadomienie", "jest sprawa.", "motto o uwadze"},
+  {"Nie każde powiadomienie", "jest sprawą.", "motto"},
   // 315
-  {"Uwaga wraca tam,", "gdzie jest spokoj.", "motto o uwadze"},
+  {"Uwaga wraca tam,", "gdzie jest spokój.", "motto"},
   // 316
-  {"Dzien bez uwagi", "latwo staje sie snem.", "motto o uwadze"},
+  {"Dzień bez uwagi", "łatwo staje się snem.", "motto"},
   // 317
-  {"Kropla po kropli", "powstaje rzeka.", "motto poetyckie"},
+  {"Kropla po kropli", "powstaje rzeka.", "motto"},
   // 318
-  {"Noc nie gasi swiata,", "tylko go chowa.", "motto poetyckie"},
+  {"Noc nie gasi świata,", "tylko go chowa.", "motto"},
   // 319
-  {"Gwiazdy widac lepiej,", "gdy gasnie halas.", "motto poetyckie"},
+  {"Gwiazdy widać lepiej,", "gdy gaśnie hałas.", "motto"},
   // 320
-  {"Wiatr czyta drzewa", "bez slow.", "motto poetyckie"},
+  {"Wiatr czyta drzewa", "bez słów.", "motto"},
   // 321
-  {"Kamien milczy,", "ale trwa.", "motto poetyckie"},
+  {"Kamień milczy,", "ale trwa.", "motto"},
   // 322
-  {"Swiatlo znajduje droge", "przez szczeliny.", "motto poetyckie"},
+  {"Światło znajduje drogę", "przez szczeliny.", "motto"},
   // 323
-  {"Cien jest podpisem", "swiatla.", "motto poetyckie"},
+  {"Cień jest podpisem", "światła.", "motto"},
   // 324
-  {"Mgla uczy,", "ze nie wszystko trzeba widziec.", "motto poetyckie"},
+  {"Mgła uczy,", "że nie wszystko trzeba widzieć.", "motto"},
   // 325
-  {"Poranek ma zapach", "drugiej szansy.", "motto poetyckie"},
+  {"Poranek ma zapach", "drugiej szansy.", "motto"},
   // 326
-  {"Dzien konczy sie cisza,", "jesli mu pozwolisz.", "motto poetyckie"},
+  {"Dzień kończy się ciszą,", "jeśli mu pozwolisz.", "motto"},
   // 327
-  {"Kto chce isc daleko,", "idzie cierpliwie.", "motto wedrowca"},
+  {"Kto chce iść daleko,", "idzie cierpliwie.", "motto"},
   // 328
-  {"Nie kazdy skret", "jest zgubieniem drogi.", "motto wedrowca"},
+  {"Nie każdy skręt", "jest zgubieniem drogi.", "motto"},
   // 329
-  {"Droga zaczyna sie", "pod stopami.", "motto wedrowca"},
+  {"Droga zaczyna się", "pod stopami.", "motto"},
   // 330
-  {"Mapa pomaga,", "ale krok prowadzi.", "motto wedrowca"},
+  {"Mapa pomaga,", "ale krok prowadzi.", "motto"},
   // 331
-  {"Nie spiesz sie tak,", "by minac widok.", "motto wedrowca"},
+  {"Nie spiesz się tak,", "by minąć widok.", "motto"},
   // 332
-  {"Kazda sciezka", "uczy innego tempa.", "motto wedrowca"},
+  {"Każda ścieżka", "uczy innego tempa.", "motto"},
   // 333
-  {"Cel jest wazny,", "ale droga zmienia czlowieka.", "motto wedrowca"},
+  {"Cel jest ważny,", "ale droga zmienia człowieka.", "motto"},
   // 334
-  {"Zgubienie drogi", "czasem znajduje oczy.", "motto wedrowca"},
+  {"Zgubienie drogi", "czasem znajduje oczy.", "motto"},
   // 335
-  {"Nie wszystko dalekie", "jest poza zasiegiem.", "motto wedrowca"},
+  {"Nie wszystko dalekie", "jest poza zasięgiem.", "motto"},
   // 336
-  {"Idz prosto,", "gdy serce zna kierunek.", "motto wedrowca"},
+  {"Idź prosto,", "gdy serce zna kierunek.", "motto"},
   // 337
-  {"Dom to miejsce,", "gdzie oddech jest lzejszy.", "motto domowe"},
+  {"Dom to miejsce,", "gdzie oddech jest lżejszy.", "motto"},
   // 338
-  {"Porzadek w rzeczach", "pomaga mysli.", "motto domowe"},
+  {"Porządek w rzeczach", "pomaga myśli.", "motto"},
   // 339
-  {"Niech dom nie bedzie", "magazynem spraw.", "motto domowe"},
+  {"Niech dom nie będzie", "magazynem spraw.", "motto"},
   // 340
-  {"Mniej rzeczy", "to wiecej oddechu.", "motto domowe"},
+  {"Mniej rzeczy", "to więcej oddechu.", "motto"},
   // 341
-  {"Dobra przestrzen", "daje spokojny dzien.", "motto domowe"},
+  {"Dobra przestrzeń", "daje spokojny dzień.", "motto"},
   // 342
-  {"Napraw male,", "zanim stanie sie duze.", "motto domowe"},
+  {"Napraw małe,", "zanim stanie się duże.", "motto"},
   // 343
-  {"Kazda rzecz", "powinna miec swoje miejsce.", "motto domowe"},
+  {"Każda rzecz", "powinna mieć swoje miejsce.", "motto"},
   // 344
-  {"Dom lubi rytm", "bardziej niz zryw.", "motto domowe"},
+  {"Dom lubi rytm", "bardziej niż zryw.", "motto"},
   // 345
-  {"Czysty stol", "uspokaja glowe.", "motto domowe"},
+  {"Czysty stół", "uspokaja głowę.", "motto"},
   // 346
-  {"Niech miejsce sluzy", "zyciu, nie odwrotnie.", "motto domowe"},
+  {"Niech miejsce służy", "życiu, nie odwrotnie.", "motto"},
   // 347
-  {"Nie kupuj pospiechu,", "placi sie spokojem.", "motto codzienne"},
+  {"Nie kupuj pośpiechu,", "płaci się spokojem.", "motto"},
   // 348
-  {"Oszczedzaj sily", "na sprawy z sensem.", "motto codzienne"},
+  {"Oszczędzaj siły", "na sprawy z sensem.", "motto"},
   // 349
-  {"Nie kazda okazja", "jest twoja droga.", "motto codzienne"},
+  {"Nie każda okazja", "jest twoja droga.", "motto"},
   // 350
-  {"Mniej obietnic,", "wiecej wykonania.", "motto codzienne"},
+  {"Mniej obietnic,", "więcej wykonania.", "motto"},
   // 351
-  {"Zanim odpowiesz,", "zrozum.", "motto codzienne"},
+  {"Zanim odpowiesz,", "zrozum.", "motto"},
   // 352
-  {"Dobry dzien", "nie musi byc idealny.", "motto codzienne"},
+  {"Dobry dzień", "nie musi być idealny.", "motto"},
   // 353
-  {"Nie czekaj na cisze,", "zacznij ja robic.", "motto o ciszy"},
+  {"Nie czekaj na ciszę,", "zacznij ja robic.", "motto"},
   // 354
-  {"Slowa sa lekkie,", "czyny maja wage.", "motto codzienne"},
+  {"Słowa są lekkie,", "czyny mają wagę.", "motto"},
   // 355
-  {"Najmniejsza troska", "dana na czas jest wielka.", "motto codzienne"},
+  {"Najmniejsza troska", "dana na czas jest wielka.", "motto"},
   // 356
-  {"Niech wdziecznosc", "ma swoje miejsce.", "motto codzienne"},
+  {"Niech wdzięczność", "ma swoje miejsce.", "motto"},
   // 357
-  {"Dobre nawyki", "pracuja po cichu.", "motto codzienne"},
+  {"Dobre nawyki", "pracują po cichu.", "motto"},
   // 358
-  {"Nie kazdy sukces", "musi byc glosny.", "motto codzienne"},
+  {"Nie każdy sukces", "musi być głośny.", "motto"},
   // 359
-  {"Sila to takze", "umiec odpuscic.", "motto stoickie"},
+  {"Siła to także", "umieć odpuścić.", "motto"},
   // 360
-  {"Nie karm zalu,", "karm rozum.", "motto stoickie"},
+  {"Nie karm żalu,", "karm rozum.", "motto"},
   // 361
-  {"Dzien bez gniewu", "jest lzejszy.", "motto stoickie"},
+  {"Dzień bez gniewu", "jest lżejszy.", "motto"},
   // 362
-  {"Umiar chroni", "przed nadmiarem pragnien.", "motto stoickie"},
+  {"Umiar chroni", "przed nadmiarem pragnień.", "motto"},
   // 363
-  {"Nie oddawaj steru", "chwilowej emocji.", "motto stoickie"},
+  {"Nie oddawaj steru", "chwilowej emocji.", "motto"},
   // 364
-  {"Smutek tez mija,", "jesli go nie karmisz.", "motto stoickie"},
+  {"Smutek też mija,", "jeśli go nie karmisz.", "motto"},
   // 365
-  {"Wdziecznosc skraca", "liste brakow.", "motto stoickie"},
+  {"Wdzięczność skraca", "listę braków.", "motto"},
   // 366
-  {"Nie musisz wygrac,", "by zachowac spokoj.", "motto stoickie"},
+  {"Nie musisz wygrać,", "by zachować spokój.", "motto"},
 };
 
-const int MOTTA_366_COUNT = sizeof(MOTTA_366) / sizeof(MOTTA_366[0]);
+const int DAILY_MOTTO_COUNT = sizeof(DAILY_MOTTOS) / sizeof(DAILY_MOTTOS[0]);
